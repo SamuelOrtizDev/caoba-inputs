@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: auto;
+  max-width: 1640px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+    "aside header header"
+    "aside content content"
+  ;
+  grid-template-rows: auto 1fr;
+}
