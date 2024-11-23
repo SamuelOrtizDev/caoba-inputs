@@ -1,3 +1,5 @@
+import { Form } from "./Form"
+
 const EditIcon = () => (
     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>
 )
@@ -12,11 +14,13 @@ const NutIcon = () => (
 
 export function Content() {
     return (
-        <main className="[grid-area:content] rounded-md bg-white border border-neutral-200 flex flex-col justify-between p-4">
+        <main className="[grid-area:content] overflow-auto rounded-md bg-white border border-neutral-200 flex flex-col justify-between p-4">
             <span className="flex items-center gap-2 text-lg">
                 <EditIcon/>
                 Ingrese la Informacion:
             </span>
+
+            <Form/>
 
             <span className="flex gap-2 font-semibold">
                 <button className="px-4 py-2 rounded-md flex gap-2 bg-blue-200 text-white transition-all hover:saturate-150"><PlayIcon/> Ejecutar</button>

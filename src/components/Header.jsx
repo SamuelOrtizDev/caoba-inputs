@@ -55,7 +55,7 @@ const list = [
 
 export function Header() {
     return (
-        <header className="[grid-area:header] min-h-[300px] flex justify-between items-center px-12 gap-4">
+        <header className="[grid-area:header] min-h-[300px] flex justify-between items-center px-12 gap-4 py-6">
             <div className="max-w-xl">
                 <span className="flex items-center gap-2 text-blue-200">
                     <ClockIcon/>

@@ -89,7 +89,7 @@ const asideOptions = [
 
 export function Aside() {
     return (
-        <aside className="[grid-area:aside] rounded-md bg-white border border-neutral-200 p-4 flex flex-col gap-8">
+        <aside className="[grid-area:aside] rounded-md bg-white border border-neutral-200 p-4 flex flex-col gap-8 text-sm">
             <span className="mb-4">
                 <Logo />
             </span>
